@@ -43,8 +43,6 @@ Neutral #EFEFEF
   display: none;
 }
 
-
-
 .jumbotron {
   text-align: center;
   font-family: inherit;
@@ -99,6 +97,10 @@ Neutral #EFEFEF
 }
 
 #reload_btn {
+  margin-left: 10px;
+}
+
+#show_all_btn {
   margin-left: 10px;
 }
 

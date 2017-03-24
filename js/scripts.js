@@ -5,6 +5,13 @@ $(document).ready(function() {
     location.reload();
   });
 
+  $("#show_all_btn").click(function() {
+    $(".ruby_rails").show();
+    $(".php_drupal").show();
+    $(".java_android").show();
+    $(".css_design").show();
+    $(".c_net").show();
+  });
 
   $("#mainform_drops").submit(function(event) {
     event.preventDefault();
@@ -101,14 +108,6 @@ $(document).ready(function() {
     } else {
       return 0;
     }
-
-    $("#show_all").click(function() {
-      $(".ruby_rails").show();
-      $(".php_drupal").show();
-      $(".java_android").show();
-      $(".css_design").show();
-      $(".c_net").show();
-    });
 
   });
 
