@@ -15,7 +15,7 @@ $(document).ready(function() {
     $("#out4").text(question4);
     $("#out5").text(question5);
 
-    // $(".question_output").show();
+    $(".question_output").show();
 
     $("#reload_btn").click(function() {
       location.reload();
