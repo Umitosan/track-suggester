@@ -1,18 +1,47 @@
 /*
+simple color scheme
 sky #CAEBF2
 carbon #A9A9A9
 Watermelon #FF3B3F
 Neutral #EFEFEF
 */
 
+/*@font-face {
+  font-family: AgeCustom;
+  src: url('Age.otf');
+}*/
+
+.jumbotron {
+  text-align: center;
+  font-family: inherit;
+  background-color: #EFEFEF;
+}
+
+.redtext {
+  color: #FF3B3F;
+}
+
 #topbar {
   height: 60px;
   background-color: #CAEBF2;
 }
 
+#toplogo {
+  height: 60px;
+  text-align: center;
+  background-color: #FF3B3F;
+  font-family: inherit;
+  font-weight: bolder;
+  color: #CAEBF2;
+}
+
+#toplogo h1 {
+  margin-left: 10px;
+}
+
 #navcontainer ul li {
   display: inline;
-  font-size: 18;
+  font-size: 22;
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -22,9 +51,4 @@ Neutral #EFEFEF
   margin: 15px;
   padding: 5px;
   list-style-type: none;
-}
-
-.jumbotron {
-  text-align: center;
-  background-color: #EFEFEF;
 }
