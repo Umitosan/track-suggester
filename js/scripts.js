@@ -21,15 +21,15 @@ $(document).ready(function() {
     if ((question1 === "Please select") && (question2 === "Please select") && (question3 === "Please select") && (question4 === "Please select") && (question5 === "Please select")) {
       alert("You didn't select anything, why not give it a try?");
       location.reload();
-    // } else if ( (question1 === "iOS/OSX") || (quesiton1 === "Unix/Linux") {
-    //   $("css_design").show();
-    //   $("ruby_rails").show();
-    //   $("php_drupal").show();
-    // } else if ( (quesiton1 === "Windows/Android") {
-    //   $("c_net").show();
-    //   $("java_android").show();
-    // } else {
-    //   alert("Question 1 is empty");
+    } else if ((question1 === "iOS/OSX") || (question1 === "Unix/Linux")) {
+      $(".css_design").show();
+      $(".ruby_rails").show();
+      $(".php_drupal").show();
+    } else if ( (question1 === "Windows/Android") ) {
+      $(".c_net").show();
+      $(".java_android").show();
+    } else {
+      alert("Question 1 is empty");
     }
 
     // "ruby_rails"
