@@ -1,0 +1,30 @@
+/*
+sky #CAEBF2
+carbon #A9A9A9
+Watermelon #FF3B3F
+Neutral #EFEFEF
+*/
+
+#topbar {
+  height: 60px;
+  background-color: #CAEBF2;
+}
+
+#navcontainer ul li {
+  display: inline;
+  font-size: 18;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#navcontainer ul {
+  text-align: right;
+  margin: 15px;
+  padding: 5px;
+  list-style-type: none;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #EFEFEF;
+}
