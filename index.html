@@ -50,9 +50,8 @@
         <div class="form-group">
           <select class="form-control" id="question1_drop">
             <option>Select an Option</option>
-            <option>iOS<option>
+            <option>iOS/OSX</option>
             <option>Android</option>
-            <option>OSX</option>
             <option>Windows</option>
             <option>Unix/Linux</option>
           </select>
@@ -73,9 +72,9 @@
         <div class="form-group">
           <select class="form-control" id="question3_drop">
             <option>Select an Option</option>
-            <option>I want to create mobile games</option>
-            <option>I want to make desktop games</option>
-            <option>I want to make console games</option>
+            <option>Let's make Mobile games</option>
+            <option>Let's make Desktop games</option>
+            <option>I want to make Console games</option>
             <option>Video games are for children!</option>
           </select>
         </div>
@@ -102,39 +101,27 @@
         </div>
 
         <ul class="button_list">
-          <li><button type="submit" class="btn btn-primary" id="reccommend_btn">Recommend a language</button></li>
+          <li><button type="submit" class="btn btn-success" id="reccommend_btn">Recommend a language</button></li>
           <li><button type="button" class="btn btn-info" id="reload_btn">Reload Page</button></li>
         </ul>
 
       </form>
 
-      <div class="question_output">
-        <h3>Question 1: <span id="out1"></span></h3>
-        <h3>Question 2: <span id="out2"></span></h3>
-        <h3>Question 3: <span id="out3"></span></h3>
-        <h3>Question 4: <span id="out4"></span></h3>
-        <h3>Question 5: <span id="out5"></span></h3>
+      <div class="question_output_tmp">
+        <h5>Question 1: <span id="out1"></span></h5>
+        <h5>Question 2: <span id="out2"></span></h5>
+        <h5>Question 3: <span id="out3"></span></h5>
+        <h5>Question 4: <span id="out4"></span></h5>
+        <h5>Question 5: <span id="out5"></span></h5>
       </div>
 
-      <div class="code_option_list">
-        <div class="C#">
-          <img src="img/csharpLogo.png" alt="C# img">
-          <p>
-            <span class="redtext">C#</span> is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.
-            <span class="citation">[ Source:  <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">Epicodus.com</a> ]</span>
-          </p>
+      <div class="language_list">
+
+        <div id="answer_title">
+          <h2>Based on your answers, you might like the following languages best:</h2>
         </div>
-        <div class="Java">
-          <img src="img/javaLogo.png" alt="java img">
-          <p>
-            <span class="redtext">Java - </span>Despite its name, Java is not related to JavaScript in any meaningful way. JavaScript was named when Java was becoming popular. Some marketing minds decided to confuse us all in an attempt to make the LiveScript language more popular by changing its name to JavaScript. Just remember that Java is not JavaScript.
-          </p>
-          <p>
-            Java can be used for anything from web applications to desktop and mobile apps. Java has a strong presence among large enterprise applications—think bank, hospital, and university software. It also powers Android apps, so it’s a good choice for those inclined toward mobile development.
-            <span class="citation">[ Source <a href="http://blog.teamtreehouse.com/choose-programming-language">treehouse.com</a> ]</span>
-          </p>
-        </div>
-        <div class="Ruby">
+
+        <div class="ruby_rails">
           <img src="img/rubyLogo.png" alt="ruby img">
           <p>
             <span class="redtext">Ruby</span> is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.
@@ -143,26 +130,59 @@
             Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing.
             <span class="citation">[ Source: <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">Epicodus.com</a> ]</span>
           <p>
+          <p>
+            <span class="redtext">Rails</span> is a web application development framework written in the Ruby language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.
+            <span class="citation">[ Source: <a href="http://api.rubyonrails.org/">rubyonrails.org</a> ]</span>
+          </p>
         </div>
-        <div class="PHP">
+
+        <div class="php_drupal">
           <img src="img/phpLogo.png" atl="php img">
           <p>
             <span class="redtext">PHP</span> is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools. If you're keen to work for an agency that builds websites for clients, or if you like the idea of building out sites for brands, businesses, and organizations, PHP is a great direction to go.
             <span class="citation">[ Source: <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">Epicodus.com</a> ]</span>
           </p>
-        </div>
-        <div class="Python">
-          <img src="img/pyLogo.png" alt="python img">
           <p>
-            <span class="redtext">Python</span> is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
+            <span class="redtext">Drupal</span> is content management software. It's used to make many of the websites and applications you use every day. Drupal has great standard features, like easy content authoring, reliable performance, and excellent security. But what sets it apart is its flexibility; modularity is one of its core principles. Its tools help you build the versatile, structured content that dynamic web experiences need.
+          <span class="citation">[ Source: <a href="https://www.drupal.org/about">drupal.org</a> ]</span>
+          </p>
+        </div>
+
+        <div class="java_android">
+          <img src="img/javaLogo.png" alt="java img">
+          <p>
+            <span class="redtext">Java - </span>Despite its name, Java is not related to JavaScript in any meaningful way. JavaScript was named when Java was becoming popular. Some marketing minds decided to confuse us all in an attempt to make the LiveScript language more popular by changing its name to JavaScript. Just remember that Java is not JavaScript.
           </p>
           <p>
-            Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an exception. When the program doesn't catch the exception, the interpreter prints a stack trace. A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power. On the other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very effective.
-            <span class="citation">[ Source: <a href="https://www.python.org/doc/essays/blurb/">Python.org</a> ]</span>
+            Java can be used for anything from web applications to desktop and mobile apps. Java has a strong presence among large enterprise applications—think bank, hospital, and university software. It also powers Android apps, so it’s a good choice for those inclined toward mobile development.
+            <span class="citation">[ Source <a href="http://blog.teamtreehouse.com/choose-programming-language">treehouse.com</a> ]</span>
           </p>
-
-
+          <p>
+            Why <span class="redtext">Android</span>?  The portability, relatively low-power usage, and wireless connectivity have allowed this technology to penetrate areas where people couldn’t even dream of using a computer or connecting to the outside world.  Remote parts of Congo may soon get mobile coverage, according to a report from the BBC.  Android has positioned itself as the worldwide leader in the smartphone market due its low-cost (hardware manufacturers can pay a small fee to us it on their phones), and the fact that it’s available to run on different hardware.  The low-cost and high availability have made it especially attractive in developing nations compared to iPhones and others.  Even in the US, where the iPhone seems to get the majority of attention from the media, Android is buzzing along with just over 50% of the US market share.
+          </p>
         </div>
+
+        <div class="css_design">
+          <img src="img/cssLogo.png" alt="css img">
+          <p>
+            <span class="redtext">CSS</span> is an extremely powerful style sheet language which is used to control the look and feel of the content written in HTML. So what does this mean? It means that if we have a website element, let’s say a “title”, and we want to make the text size “20px”, the color “black”, and the padding around it “10px”, we would use CSS to control the look of our element.
+          </p>
+          <p>
+            With CSS, we are able to create rules, and apply those rules to many elements within the website. This approach offers many advantages when site-wide changes are required by a client. Since the content is completely separated from the design, we can make those changes in our Style Sheet and have it effect every applicable instance.
+          </p>
+        </div>
+
+        <div class="c#_net">
+          <img src="img/csharpLogo.png" alt="C# img">
+          <p>
+            <span class="redtext">C#</span> is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.
+            <span class="citation">[ Source:  <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">Epicodus.com</a> ]</span>
+          </p>
+          <p>
+            <span class="redtext">.NET</span> allows developers to write code using their preferred language and be assured that code can run wherever the framework is supported. Users benefit from consistent applications and also the fact that many apps might not be developed at all if the developers didn’t have access to the framework.
+          </p>
+        </div>
+
       </div>
     </div>
 

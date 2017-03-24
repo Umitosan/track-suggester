@@ -15,11 +15,13 @@ $(document).ready(function() {
     $("#out4").text(question4);
     $("#out5").text(question5);
 
-    $(".question_output").show();
+    $(".question_output_tmp").show();
+    $(".language_list").show();
+    alert("after form.show()");
 
     $("#reload_btn").click(function() {
       location.reload();
-      alert("reset pushed");
+      // alert("reset pushed");
     });
 
   });

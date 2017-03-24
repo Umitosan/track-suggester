@@ -11,6 +11,14 @@ Neutral #EFEFEF
   src: url('Age.otf');
 }*/
 
+.language_list {
+  display: none;
+}
+
+.question_output_tmp {
+  display: hide;
+}
+
 .jumbotron {
   text-align: center;
   font-family: inherit;
@@ -55,14 +63,26 @@ Neutral #EFEFEF
   list-style-type: none;
 }
 
-.button_list li{
+.button_list li {
   display: inline;
   list-style-type: none;
 }
 
-.code_option_list img {
+#reccommend_btn {
+  margin-left: -30px;
+}
+
+#reload_btn {
+  margin-left: 10px;
+}
+
+.language_list img {
   width: 100px;
   margin-top: 10px;
+}
+
+.Ruby img {
+  width: 80px;
 }
 
 .citation {
