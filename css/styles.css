@@ -55,12 +55,23 @@ Neutral #EFEFEF
   list-style-type: none;
 }
 
-.citation {
-  font-style: italic;
-  font-size: 11px;
+.button_list li{
+  display: inline;
+  list-style-type: none;
 }
 
 .code_option_list img {
   width: 100px;
   margin-top: 10px;
+}
+
+.citation {
+  font-style: italic;
+  font-size: 11px;
+}
+
+.intro {
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
 }
