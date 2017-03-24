@@ -11,13 +11,39 @@ Neutral #EFEFEF
   src: url('Age.otf');
 }*/
 
-.language_list {
+#answer_title {
   display: none;
 }
 
-.question_output_tmp {
-  display: hide;
+.language_list {
+  /*display: none;*/
 }
+
+.question_output_tmp {
+  display: none;
+}
+
+.ruby_rails {
+  display: none;
+}
+
+.php_drupal {
+  display: none;
+}
+
+.java_android {
+  display: none;
+}
+
+.css_design {
+  display: none;
+}
+
+.c_net {
+  display: none;
+}
+
+
 
 .jumbotron {
   text-align: center;
