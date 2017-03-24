@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+
+  $("#reload_btn").click(function() {
+    location.reload();
+  });
+
+
   $("#mainform_drops").submit(function(event) {
     event.preventDefault();
 
@@ -8,6 +14,8 @@ $(document).ready(function() {
     var question3 = $("#question3_drop :selected").val();
     var question4 = $("#question4_drop :selected").val();
     var question5 = $("#question5_drop :selected").val();
+
+    var emtpyfields = 1;
 
     $("#out1").text(question1);
     $("#out2").text(question2);
@@ -26,65 +34,73 @@ $(document).ready(function() {
       $(".css_design").show();
       $(".ruby_rails").show();
       $(".php_drupal").show();
-    } else if ( (question1 === "Windows/Android") ) {
+    } else if (question1 === "Windows/Android") {
       $(".c_net").show();
       $(".java_android").show();
     } else {
-      alert("Question 1 is empty");
+      emptyfields = 0;
     }
 
     //QUESTION 2 LOGIC
-    if ((question1 === "Please select") && (question2 === "Please select") && (question3 === "Please select") && (question4 === "Please select") && (question5 === "Please select")) {
-      alert("You didn't select anything, why not give it a try?");
-      location.reload();
-    } else if ((question2 === "") || (question2 === "")) {
-
-    } else if ( (question2 === "") ) {
-
+    if ((question2 === "graphics") && (question2 === "UI/layout")) {
+      $(".css_design").show();
+      $(".ruby_rails").show();
+    } else if ((question2 === "databases/organizing structures")) {
+      $(".c_net").show();
+      $(".css_design").hide();
     } else {
-      alert("Question 2 is empty");
+      emptyfields = 0;
     }
 
     //QUESTION 3 LOGIC
-    if ((question1 === "Please select") && (question2 === "Please select") && (question3 === "Please select") && (question4 === "Please select") && (question5 === "Please select")) {
-      alert("You didn't select anything, why not give it a try?");
-      location.reload();
-    } else if ((question3 === "") || (question3 === "")) {
-
-    } else if ( (question3 === "") ) {
-
+    if (question3 === "Mobile games") {
+      $(".java_android").show();
+    } else if (question3 === "Desktop games") {
+      $(".css_design").hide();
+      $(".php_drupal").hide();
+    } else if (question3 === "Video games are for children!") {
+      $(".java_android").hide();
+      $(".php_drupal").show();
     } else {
-      alert("Question 3 is empty");
+      emptyfields = 0;
     }
 
     //QUESTION 4 LOGIC
-    if ((question1 === "Please select") && (question2 === "Please select") && (question3 === "Please select") && (question4 === "Please select") && (question5 === "Please select")) {
-      alert("You didn't select anything, why not give it a try?");
-      location.reload();
-    } else if ((question4 === "") || (question4 === "")) {
-
-    } else if ( (question4 === "") ) {
-
+    if (question4 === "I love the complexity of databases!") {
+      $(".php_drupal").show();
+      $(".css_design").hide();
+      $(".java_android").hide();
+    } else if (question4 === "Databases sound boring and tedious") {
+      $(".css_design").show();
+      $(".java_android").show();
     } else {
-      alert("Question 4 is empty");
+      emptyfields = 0;
     }
+
     //QUESTION 5 LOGIC
-    if ((question1 === "Please select") && (question2 === "Please select") && (question3 === "Please select") && (question4 === "Please select") && (question5 === "Please select")) {
-      alert("You didn't select anything, why not give it a try?");
-      location.reload();
-    } else if ((question5 === "") || (question5 === "")) {
-
-    } else if ( (question5 === "") ) {
-
+    if (question5 === "I prefer large teams") {
+      $(".c_net").show();
+      $(".css_design").hide();
+      $(".ruby_rails").hide();
+    } else if (question5 === "I prefer small teams") {
+      $(".ruby_rails").show();
+      $(".php_drupal").show();
+      $(".java_android").show();
+      $(".c_net").hide();
+      $(".css_design").hide();
+    } else if (question5 === "I prefer to work alone") {
+      $(".css_design").show();
+      $(".php_drupal").show();
+      $(".ruby_rails").hide();
     } else {
-      alert("Question 5 is empty");
+      emptyfields = 0;
     }
 
-    // ".ruby_rails"
-    // ".php_drupal"
-    // ".java_android"
-    // ".css_design"
-    // ".c#_net"
+    if (emptyfields === 1) {
+      alert("The picker works best if you fill all fields! Reload the page to recieve a more accurate pick.");
+    } else {
+      return 0;
+    }
 
     $("#show_all").click(function() {
       $(".ruby_rails").show();
@@ -92,11 +108,6 @@ $(document).ready(function() {
       $(".java_android").show();
       $(".css_design").show();
       $(".c_net").show();
-    });
-
-    $("#reload_btn").click(function() {
-      location.reload();
-      // alert("reset pushed");
     });
 
   });
