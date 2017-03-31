@@ -15,8 +15,8 @@ Created 03/24/2017.
 ## Setup/Installation Requirements
 
 * Download or Clone the repo from https://github.com/Umitosan/track-suggester
-- Open the base project folder: "track-suggester"
-- Open index.html in your browser
+* Open the base project folder: "track-suggester"
+* Open index.html in your browser
 
 ## Known Bugs
 
